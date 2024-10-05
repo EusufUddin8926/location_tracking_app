@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
           alignment: Alignment.center,
           child: ElevatedButton(
               onPressed: () async {
-                await locationControllerService.startGeoLocationService();
+                await locationControllerService.startLocationTracking();
               },
               child: const Text("Start Location Service")),
         ),
